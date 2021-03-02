@@ -1,4 +1,20 @@
 window.addEventListener('DOMContentLoaded', function () {
+    //下拉菜单栏
+    
+    function display(elemt) {
+        elemt.addEventListener('mouseover', function () {
+            elemt.querySelector('ul').style.display = 'block';
+        })
+        elemt.addEventListener('mouseleave', function () {
+            elemt.querySelector('ul').style.display = 'none';
+        })
+    }
+    var global = document.querySelector('.global');
+    display(global);
+    var mytaobao = document.querySelector('.mytaobao');
+    display(mytaobao);
+    var star = document.querySelector('.star');
+    display(star);
     //二维码关闭
     var top = document.querySelector('.top')
     var qr = top.querySelector('.qr');
@@ -139,7 +155,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var police_news = document.querySelector('.police').querySelectorAll('li');
     var news = document.querySelector('.news').querySelector('a');
     for (let temp = 0; temp < police_news.length; temp++) {
-        police_news[temp].addEventListener('mouseover',function () {
+        police_news[temp].addEventListener('mouseover', function () {
             news.innerHTML = this.innerHTML;
             for (let items = 0; items < police_news.length; items++) {
                 police_news[items].className = '';
