@@ -74,9 +74,9 @@
   line-height: 30px;
 }
 .nav-hover:hover {
-  background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   border-bottom: none;
+  background-color: #fff;
 }
 .unselected {
   float: left;
@@ -167,13 +167,13 @@
   font-weight: 700;
 }
 .search-fixed {
-  display: none;
   position: fixed;
-  height: 54px;
-  width: 100%;
-  background-color: #fff;
   z-index: 999;
+  display: none;
+  width: 100%;
+  height: 54px;
   padding: 7px 164.6px;
+  background-color: #fff;
 }
 .search-fixed img {
   height: 33px;
@@ -183,25 +183,25 @@
   bottom: 7px;
   width: 554px;
   height: 40px;
-  padding: 6px 4px;
   margin-left: 315px;
+  padding: 6px 4px;
   border: 2px solid #ff5000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 .search-fixed .search .switch-nav {
   position: absolute;
-  left: 0px;
   bottom: 0px;
-  background-color: #f4f4f4;
-  height: 100%;
+  left: 0px;
   width: 74px;
+  height: 100%;
+  text-align: center;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 36px;
+  background-color: #f4f4f4;
   font-family: tahoma, arial, 'Hiragino Sans GB', '宋体', sans-serif, 'icomoon';
+  font-size: 12px;
+  line-height: 36px;
 }
 .search-fixed .search span {
   position: absolute;
@@ -259,42 +259,42 @@
 }
 .nav .userinfo ul .global ul,
 .nav .url ul .global ul {
+  bottom: -270px;
   width: 250px;
   height: 270px;
-  bottom: -270px;
 }
 .nav .userinfo ul .mytaobao ul,
 .nav .url ul .mytaobao ul {
+  bottom: -70px;
   width: 90px;
   height: 70px;
-  bottom: -70px;
 }
 .nav .userinfo ul .star ul,
 .nav .url ul .star ul {
+  bottom: -70px;
   width: 80px;
   height: 70px;
-  bottom: -70px;
 }
 .nav .userinfo ul li,
 .nav .url ul li {
   position: relative;
+  height: 100%;
   margin-right: 7px;
   padding: 0px 6px;
-  height: 100%;
-  line-height: 35px;
   border: 1px solid #f4f4f4;
   border-bottom: none;
+  line-height: 35px;
 }
 .nav .userinfo ul li ul,
 .nav .url ul li ul {
-  display: none;
   position: absolute;
-  background-color: #fff;
-  left: -1px;
-  overflow: auto;
   z-index: 999;
-  border: 1px solid #eeeeee;
+  left: -1px;
+  display: none;
+  overflow: auto;
+  border: 1px solid #eee;
   border-top: none;
+  background-color: #fff;
 }
 .nav .userinfo ul li ul li,
 .nav .url ul li ul li {
@@ -832,7 +832,7 @@
 }
 .main-warp .class .index .userinfo .smallapp ul li:nth-child(-n+3):hover {
   border-color: #f40;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
 }
 .main-warp .class .index .userinfo .smallapp ul li:hover p {
   color: #f40;
